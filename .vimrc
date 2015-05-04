@@ -35,9 +35,11 @@ function! Gf()
   let file_name = ToSnakeCase(GetModule())
   let extension = expand("%:e")
   let file_name = file_name . "." . extension
-  exec "set path^=app/**"
   exec "find " . file_name
-  exec "set path-=app/**"
 endfunction
 
+" Update the search path according to your project's structure
+set path^=app/**
+
+" Map the Gf() function
 map <leader>f :call Gf()<cr>
