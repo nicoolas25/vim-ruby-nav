@@ -23,3 +23,11 @@ It will load the .vimrc file contained in the directory you are when vim is laun
 
 1. Puts the .vimrc contained in this repository into you project folder
 2. Use `<leader>f` as you would use `gf`
+
+## Example
+
+1. Using this repository as CWD
+2. Edit the `app.rb` file
+3. Make sure your cursor is on `Hello::Toto` class.
+4. Type `<leader>f`
+5. You should see the `app/toto.rb` file now...
